@@ -3974,6 +3974,10 @@ textarea.form-control-lg {
   position: static;
 }
 
+.navbar-nav.ms-auto {
+  flex-wrap: nowrap;
+}
+
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
