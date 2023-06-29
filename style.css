@@ -8,7 +8,7 @@ body {
     font-weight: bolder;
 }
 
-#bienvenidaContainer{
+.subthemeContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
+    margin-bottom:60px;
 }
 
 #ofertaEducativaTitle{
@@ -50,4 +51,27 @@ body {
     border-radius: 50%;
     background-color:#13322B;
     margin: 0 40px;
+}
+
+#infoCont{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    align-self: center;
+    width: 80%;
+
+}
+
+.subthemeContainerInfo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: max-content;
+    margin: 2px;
+    padding: 15px;
+    background-color: #DDDDDD;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
