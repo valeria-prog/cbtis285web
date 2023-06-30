@@ -8,7 +8,7 @@ body {
     font-weight: bolder;
 }
 
-#bienvenidaContainer{
+.subthemeContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,8 @@ body {
 #ofertaEducativaContainer{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 45px;
+    margin-bottom:60px;
 }
 
 #ofertaEducativaTitle{
@@ -37,17 +38,51 @@ body {
     font-weight: bolder;
     font-size:large
 }
-.circleContainer {
+#circleContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 25px;
+    width: 100%;
+    height: 80px;
+ 
 }
 
 .circle {
+    margin: 0 25px;
     width: 75px;
     height: 75px;
     border-radius: 50%;
     background-color:#13322B;
-    margin: 0 40px;
 }
+
+.circle:hover{
+    background-color:#1a443a;
+    width: 80px;
+    height: 80px;
+}
+
+#infoCont{
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.subthemeContainerInfo{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    margin: 2px;
+    padding: 15px;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+

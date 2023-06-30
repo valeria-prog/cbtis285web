@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CBTis 285</title>
 
-    <!--fuente-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <!--fuente (font)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <!--bootstrap-->
     <link
@@ -25,7 +22,7 @@
     />
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-    <!--independiente-->
+    <!--independiente (custom scripts and styles)-->
     <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
@@ -153,6 +150,63 @@
         vehicula pharetra. Donec suscipit risus egestas, vestibulum nisl
         efficitur, mattis nisi. Curabitur scelerisque justo at lectus
         scelerisque, ut ultricies ante varius.
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark  title" id="navbarPers">
+    <div class="container-fluid">
+      <a class="navbar-brand titleHover" href="#"><img src="img/logoCbetis285.png" style="width: 80px; height: 80px;">CBTis 285</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Institución</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Alumnos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+              <li><a class="dropdown-item" href="#">Horarios</a></li>
+              <li><a class="dropdown-item" href="#">Becas</a></li>
+              <li><a class="dropdown-item" href="#">Convocatorias</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Nuevo ingreso
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Lista de aceptados</a></li>
+              <li><a class="dropdown-item" href="#">Instrucciones para inscripciones</a></li>
+              <li><a class="dropdown-item" href="#">Formato para inscripcion</a></li>
+              <li><a class="dropdown-item" href="#">Horarios de curso propedeutico</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Transparencia
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Informe de actividades y rendición de cuentas 2022-2023</a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="expandSearch()">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="d-none" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        </form>
       </div>
     </div>
 
@@ -165,4 +219,39 @@
       </div>
     </div>
   </body>
+  <!-- Main Content Section -->
+  <div class="subthemeContainer">
+    <div class="title">Lorem Ipsum</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, pharetra vitae commodo ut, fringilla facilisis justo. Aliquam consectetur eu urna a pharetra. Proin ullamcorper libero eget elit vehicula pharetra. Donec suscipit risus egestas, vestibulum nisl efficitur, mattis nisi. Curabitur scelerisque justo at lectus scelerisque, ut ultricies ante varius. </div>
+  </div>
+
+  <!-- Educational Offer Section -->
+  <div id="ofertaEducativaContainer" class="flex-shrink-1">
+    <div id="ofertaEducativaTitle">OFERTA EDUCATIVA</div>
+    <div id="circleContainer">
+      <div class="circle flex-shrink-0" ></div>
+      <div class="circle flex-shrink-0"></div>
+      <div class="circle flex-shrink-0"></div>
+    </div>
+  </div>
+
+  <!-- Information Section -->
+  <div id="infoCont">
+    <div class="subthemeContainerInfo">
+      <h6 class="title">MISION</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, pharetra vitae commodo ut, fringilla facilisis justo. Aliquam consectetur eu urna a pharetra.</p>
+    </div>
+
+    <div class="subthemeContainerInfo">
+      <h6 class="title">VISION</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, pharetra vitae commodo ut, fringilla facilisis justo. Aliquam consectetur eu urna a pharetra.</p>
+    </div>
+
+    <div class="subthemeContainerInfo">
+      <h6 class="title">OBJETIVO</h6>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor lectus, pharetra vitae commodo ut, fringilla facilisis justo. Aliquam consectetur eu urna a pharetra.</p>
+    </div>
+  </div>
+
+</body>
 </html>
