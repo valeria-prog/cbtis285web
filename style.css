@@ -1,118 +1,124 @@
 body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
-.title{
-    font-weight: bolder;
+.title {
+  font-weight: bolder;
 }
 
-.subthemeContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color:#DDDDDD;
-    width: 100%;
-    height: max-content;
-    padding: 20px;
+.subthemeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #dddddd;
+  width: 100%;
+  height: max-content;
+  padding: 20px;
 }
 
-#navbarPers{
-    background-color: #13322B;
+#navbarPers {
+  background-color: #13322b;
 }
 
-#ofertaEducativaContainer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
-    margin-bottom:60px;
+#ofertaEducativaContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-bottom: 60px;
 }
 
-#ofertaEducativaTitle{
-    align-self: center;
-    justify-self: center;
-    color:#13322B;
-    font-weight: bolder;
-    font-size:large
+#ofertaEducativaTitle {
+  align-self: center;
+  justify-self: center;
+  color: #13322b;
+  font-weight: bolder;
+  font-size: large;
 }
 #circleContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 25px;
-    width: 100%;
-    height: 80px;
- 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+  height: 80px;
 }
 
 .circle {
-    margin: 0 25px;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background-color:#13322B;
+  margin: 0 25px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #13322b;
 }
 
-.circle:hover{
-    background-color:#1a443a;
-    width: 80px;
-    height: 80px;
+.circle:hover {
+  background-color: #1a443a;
+  width: 80px;
+  height: 80px;
 }
 
-#infoCont{
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
+#infoCont {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
 }
 
-.subthemeContainerInfo{
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    height: max-content;
-    margin: 2px;
-    padding: 15px;
-    background-color: #DDDDDD;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.subthemeContainerInfo {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  margin: 2px;
+  padding: 15px;
+  background-color: #dddddd;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
-    background-color: #13322B;
-    margin-top: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 14px;
-    position: static;
-  }
+  background-color: #13322b;
+  margin-top: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  position: static;
+}
 
-  footer h5 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  footer p {
-    margin-bottom: 5px;
-  }
+footer p {
+  margin-bottom: 5px;
+}
 
 .footer {
-    background-color: #13322B;
-    color: #fff;
-    padding: 20px;
-    margin-top: 50px;
+  background-color: #13322b;
+  color: #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.c-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top;
 }
