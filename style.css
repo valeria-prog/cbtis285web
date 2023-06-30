@@ -121,4 +121,6 @@ footer p {
   height: 400px;
   object-fit: cover;
   object-position: top;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
