@@ -11,6 +11,10 @@ body {
 
 .title {
   font-weight: bolder;
+  font-size: large;
+}
+.text-justify {
+  text-align: justify;
 }
 
 .subthemeContainer {
@@ -123,4 +127,12 @@ footer p {
   object-position: top;
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
+}
+
+/* alumno html style*/
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  margin-bottom: 60px;
 }
