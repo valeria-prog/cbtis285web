@@ -136,3 +136,10 @@ footer p {
   margin-top: 45px;
   margin-bottom: 60px;
 }
+
+#demo{
+  margin-bottom: -180px;
+}
+#firstSubcontainer{
+  padding-top: 200px;
+}
