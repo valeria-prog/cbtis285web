@@ -37,7 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 70px;
-  margin-bottom: 60px;
 }
 
 #ofertaEducativaTitle {
@@ -45,29 +44,36 @@ body {
   justify-self: center;
   color: #13322b;
   font-weight: bolder;
-  font-size: large;
+  font-size: 26px;
 }
 #circleContainer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-top: 25px;
-  width: 100%;
-  height: 80px;
+  margin-bottom: 50px;
 }
 
 .circle {
-  margin: 0 25px;
-  width: 75px;
-  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  margin: 0 50px; /* Agrega un margen horizontal de 15px */
   border-radius: 50%;
-  background-color: #13322b;
+  background-color: #ba9e66;
+  transition: background-color 0.3s, width 0.3s, height 0.3s;
 }
 
 .circle:hover {
-  background-color: #1a443a;
-  width: 80px;
-  height: 80px;
+  background-color: #e0d6b5;
+  width: 95px;
+  height: 95px;
+}
+
+.ofertaimg {
+  max-width: 75%;
+  max-height: 75%;
 }
 
 #infoCont {
@@ -127,6 +133,11 @@ footer p {
   object-position: top;
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
+}
+.imgcard {
+  max-width: 260px;
+  max-height: 150px;
+  object-fit: cover;
 }
 
 /* alumno html style*/
