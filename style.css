@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -7,6 +11,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .title {
@@ -72,8 +77,8 @@ body {
 }
 
 .ofertaimg {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 65%;
+  max-height: 65%;
 }
 
 #infoCont {
