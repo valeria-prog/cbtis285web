@@ -1,394 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CBTIS 285</title>
-    <!--icono-->
-    <link
-      rel="icon"
-      type="image/png"
-      href="img/favicon-16x16.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="img/favicon-32x32.png"
-      sizes="16x16"
-    />
 
-    <!--fuente (font)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBTIS 285</title>
+  <!--icono-->
+  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="16x16" />
 
-    <!--bootstrap-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="bootstrap-5.0.2-dist/css/bootstrap.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-    />
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <!--fuente (font)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-    <!--independiente (custom scripts and styles)-->
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark title fixed-top"
-      id="navbarPers"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand titleHover" href="#"
-          ><img
-            src="img/logoCbetis285.png"
-            style="width: 80px; height: 80px"
-          />CBTIS 285</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Institución</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Alumnos
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Calificaciones</a></li>
-                <li><a class="dropdown-item" href="#">Horarios</a></li>
-                <li><a class="dropdown-item" href="#">Becas</a></li>
-                <li><a class="dropdown-item" href="#">Convocatorias</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Nuevo ingreso
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Lista de aceptados</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Instrucciones para inscripciones</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Formato para inscripcion</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Horarios de curso propedeutico</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Transparencia
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="navbarDropdown"
-              >
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Informe de actividades y rendición de cuentas 2022-2023</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" onclick="expandSearch()">
-                <i class="bi bi-search"></i>
-              </a>
-            </li>
-          </ul>
-          <form class="d-none" id="searchForm">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-          </form>
-        </div>
-      </div>
-    </nav>
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicators/dots -->
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="0"
-          class="active"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#demo"
-          data-bs-slide-to="2"
-        ></button>
-      </div>
+  <!--bootstrap-->
+  <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active c-item">
-          <div class="rounded-bottom">
-            <img
-              src="img/carrusel1.jpg"
-              alt="Los Angeles"
-              class="d-block c-img"
-              style="width: 100%"
-            />
-          </div>
-        </div>
-        <div class="carousel-item c-item">
-          <div class="rounded-bottom">
-            <img
-              src="img/carrusel2.jpg"
-              alt="Chicago"
-              class="d-block c-img"
-              style="width: 100%"
-            />
-          </div>
-        </div>
-        <div class="carousel-item c-item">
-          <div class="rounded-bottom">
-            <img
-              src="img/carrusel3.jpg"
-              alt="New York"
-              class="d-block c-img"
-              style="width: 100%"
-            />
-          </div>
-        </div>
-      </div>
+  <!--independiente (custom scripts and styles)-->
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
 
-      <!-- Left and right controls/icons -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon"></span>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark title fixed-top" id="navbarPers">
+    <div class="container-fluid">
+      <a class="navbar-brand titleHover" href="#"><img src="img/logoCbetis285.png"
+          style="width: 80px; height: 80px" />CBTIS 285</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#demo"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-
-    <!-- Main Content Section -->
-    <div class="subthemeContainer" id="firstSubcontainer">
-      <div class="title">...</div>
-      <div class="p-2">
-        <p class="">
-          El Centro de Bachillerato Tecnológico industrial y de servicios número
-          285, por sus siglas CBTis, institución educativa federal del nivel
-          medio superior, que se encuentra ubicado en la zona urbana del
-          municipio de Tecomán del estado de Colima. Es el quinto plantel en el
-          estado perteneciente a la Dirección General de Educación Tecnológica
-          Industrial y de Servicios por sus siglas DGETI.
-        </p>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Institución</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Alumnos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Calificaciones</a></li>
+              <li><a class="dropdown-item" href="#">Horarios</a></li>
+              <li><a class="dropdown-item" href="#">Becas</a></li>
+              <li><a class="dropdown-item" href="#">Convocatorias</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Nuevo ingreso
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Lista de aceptados</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Instrucciones para inscripciones</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Formato para inscripcion</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Horarios de curso propedeutico</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Transparencia
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Informe de actividades y rendición de cuentas 2022-2023</a>
+              </li>
+              <li><a class="dropdown-item" href="#"></a></li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="expandSearch()">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="d-none" id="searchForm">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+        </form>
       </div>
     </div>
+  </nav>
 
-    <!-- Educational Offer Section -->
-    <div id="ofertaEducativaContainer" class="flex-shrink-1">
-      <div id="ofertaEducativaTitle">OFERTA EDUCATIVA</div>
-      <div id="circleContainer">
-        <div class="circle flex-shrink-0"></div>
-        <div class="circle flex-shrink-0"></div>
-        <div class="circle flex-shrink-0"></div>
-      </div>
-    </div>
-
-    <!-- Information Section -->
-    <div id="infoCont">
-      <div class="subthemeContainerInfo">
-        <h6 class="title">MISIÓN</h6>
-        <p>
-          Formar ciudadanos con capacidades requeridas para propiciar y
-          participar en una sociedad del conocimiento, tanto en el ámbito
-          laboral como social.
-        </p>
-      </div>
-
-      <div class="subthemeContainerInfo">
-        <h6 class="title">VISIÓN</h6>
-        <p>
-          Ser una institución de educación media superior certificado, orientada
-          al aprendizaje y desarrollo de conocimientos tecnológicos y
-          humanísticos.
-        </p>
-      </div>
-
-      <div class="subthemeContainerInfo">
-        <h6 class="title">OBJETIVO</h6>
-        <p>
-          Formar bachilleres técnicos que desarrollen, fortalezcan y preserven
-          una cultura tecnológica y una infraestructura industrial y de
-          servicios que coadyuven y satisfagan las necesidades económicas y
-          sociales del país.
-        </p>
-      </div>
-    </div>
-    <!--news cards-->
-    <div class="container-fluid mx-auto p-4 m-4">
-      <h3 class="text-center">NOTICIAS</h3>
-      <div class="row justify-content-center align-items-lg-start">
-        <div class="card" style="width: 18rem; height: 390px">
-          <img
-            src="https://scontent.fgdl5-3.fna.fbcdn.net/v/t39.30808-6/359704918_741316131127602_8547205025086994316_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=-PC9CkYOzkoAX_RbsqC&_nc_ht=scontent.fgdl5-3.fna&oh=00_AfD8ZLYuF0Mw31Q_cdfhdVn3ILLYwT9PlklSBEOYjKDmGQ&oe=64DC347F"
-            class="card-img-top imgcard"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Generación 2020-2023</h5>
-            <p class="card-text">
-              Te compartimos algunas fotos de nuestra ceremonia de Graduación y
-              clausura del ciclo escolar 2022-23
-            </p>
-            <br />
-            <a
-              href="https://www.facebook.com/285TECOMAN/posts/pfbid0WRAxqvEGsCgJhLMKsiTT9d8n1jerr5EPSke3gZCHVYxyLt5uok1ihgLja52EzigHl"
-              class="btn btn-secondary"
-              >Ver más</a
-            >
-          </div>
+  <div class="container hsection">
+    <div class="row d-flex align-items-center">
+      <!-- Primera mitad (izquierda) -->
+      <div class="col-md-6">
+        <!-- Contenido de la primera mitad -->
+        <div class="bg-transparent p-4 text-center">
+          <!-- Contenido izquierdo aquí -->
+          <h1 class="fw-bold">Historia</h1>
+          <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida orci eu
+            libero rhoncus, a sodales urna vehicula. Quisque at nulla quis arcu scelerisque tincidunt vel in dolor.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam
+            consequat nunc quis justo lacinia ultrices. Nunc id libero eget mi interdum elementum. Fusce nec semper ex.
+            Maecenas euismod nec turpis ut laoreet. Nullam gravida, velit a volutpat scelerisque,</p>
         </div>
-        <div class="card" style="width: 18rem; height: 390px">
-          <img
-            src="https://scontent.fgdl5-1.fna.fbcdn.net/v/t39.30808-6/357408243_660373909466792_526690183733345285_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=io7VCFpf0ssAX9LapfA&_nc_ht=scontent.fgdl5-1.fna&oh=00_AfBzInzDt6_rNys2RZxr5-O47BdqcZdjbSoM2lYtDhC0JQ&oe=64DC440A"
-            class="card-img-top imgcard"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Encuentro Estatal Deportivo DGETI 2023</h5>
-            <p class="card-text">
-              Participación de nuestro plantel en las disciplinas de : Fútbol ⚽
-              🥅 Voleibol 🏐 🤾 Ajedrez ♟️ Atletismo 🎽🏃
-            </p>
-            <a
-              href="https://www.facebook.com/InstitutoColimensedelDeporte/posts/pfbid02NZ7LnMZGZkKsp2xH7nebmLBvcLXME1ByRDfzUcwNknDo5kLD42hTkWARrepvPuZ2l"
-              class="btn btn-secondary"
-              >Ver más</a
-            >
-          </div>
-        </div>
-        <div class="card" style="width: 18rem; height: 390px">
-          <img
-            src="https://scontent.fgdl5-3.fna.fbcdn.net/v/t39.30808-6/356661070_734846345107914_41929776505772300_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=gqz3ZQW-qDcAX9DRqyA&_nc_ht=scontent.fgdl5-3.fna&oh=00_AfDt-7hQxRFfkspU9goLEkuN5uxLfvQ6Oe4RCNpzXkGTkQ&oe=64DB2008"
-            class="card-img-top imgcard"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">
-              Presentacion Final 4to Semestre Repostería
-            </h5>
-            <p class="card-text">
-              Alumnos y alumnas de 4to Semestre en la asignatura "Prepara
-              productos de Repostería"
-            </p>
-            <a
-              href="https://www.facebook.com/285TECOMAN/posts/pfbid02YjcHcBQgFvnkeynWrWe28t4vk72wm8aXPbLHpJffFQWnfZuss2YqZ5tJJYjE1BMJl"
-              class="btn btn-secondary"
-              >Ver más</a
-            >
-          </div>
-        </div>
-        <div class="card" style="width: 18rem; height: 390px">
-          <img
-            src="https://scontent.fgdl5-3.fna.fbcdn.net/v/t39.30808-6/352171331_1547478215660553_4723907678994461420_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=WKyGWt0xPI4AX86yThJ&_nc_ht=scontent.fgdl5-3.fna&oh=00_AfAGYbHhvjOV9bnTmma4hO-pfZ8BUujuzebL1EXJDHl_TQ&oe=64DB038B"
-            class="card-img-top imgcard"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Para La Historia del CBTIS No. 285 🥇</h5>
-            <p class="card-text">
-              Resultado del Festival Académico de la DGETI 2023 etapa Nacional
-              en Pachuca De Soto, Hidalgo.
-            </p>
-            <a
-              href="https://www.facebook.com/285TECOMAN/posts/pfbid02K9z7PJcy216pub4GtQgpYQpgcR6DZJGcSbEV9LraHiRhacbgdMLNAKWMyywropZXl"
-              class="btn btn-secondary"
-              >Ver más</a
-            >
-          </div>
+      </div>
+  
+      <!-- Segunda mitad (derecha) -->
+      <div class="col-md-6">
+        <!-- Contenido de la segunda mitad -->
+        <div class="p-4 text-center">
+          <!-- Contenido derecho aquí -->
+          <img src="img/carrusel1.jpg" class="img-fluid" alt="Imagen" style="max-width: 100%; border-radius: 25px;">
         </div>
       </div>
     </div>
-    <!-- Information Section -->
-    <footer class="footer">
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-md-6">
-            <h5>Footer Content</h5>
-            <p>This is the footer content.</p>
-          </div>
-          <div class="col-md-6">
-            <h5>Contact</h5>
-            <p>Email: info@example.com<br />Phone: 123-456-7890</p>
-          </div>
+  </div>
+  <hr>
+  
+
+ <!-- Our values section -->
+
+ <div class="container vsection">
+  <div class="row">
+    <!-- División en tres columnas igualmente (ancho igual en todas las resoluciones) -->
+    <div class="col d-flex">
+      <!-- Contenido del primer tercio -->
+      <div class="bg-values p-4 flex-fill h-100">
+        <!-- Título del primer tercio -->
+        <h4 class="fw-bold text-center">MISIÓN</h4>
+        <!-- Contenedor de párrafo con fondo diferente -->
+        <div class="paragraph-bg">
+          <p class="text-justify">
+            Formar ciudadanos con capacidades requeridas para propiciar y
+            participar en una sociedad del conocimiento, tanto en el ámbito
+            laboral como social.
+          </p>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <div class="col d-flex">
+      <!-- Contenido del segundo tercio -->
+      <div class="bg-values p-4 flex-fill h-100">
+        <!-- Título del segundo tercio -->
+        <h4 class="fw-bold text-center">VISIÓN</h4>
+        <!-- Contenedor de párrafo con fondo diferente -->
+        <div class="paragraph-bg">
+          <p class="text-justify">
+            Ser una institución de educación media superior certificado, orientada
+            al aprendizaje y desarrollo de conocimientos tecnológicos y
+            humanísticos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col d-flex">
+      <!-- Contenido del tercer tercio -->
+      <div class="bg-values p-4 flex-fill h-100">
+        <!-- Título del tercer tercio -->
+        <h4 class="fw-bold text-center">OBJETIVO</h4>
+        <!-- Contenedor de párrafo con fondo diferente -->
+        <div class="paragraph-bg">
+          <p class="text-justify">
+            Formar bachilleres técnicos que desarrollen, fortalezcan y preserven
+            una cultura tecnológica y una infraestructura industrial y de
+            servicios que coadyuven y satisfagan las necesidades económicas y
+            sociales del país.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center mb-3">
+            <img src="img/logoCbetis285.png" style="width: 50px; height: 50px;" class="me-2" />
+            <h4 class="m-0">CBTIS 285</h4>
+          </div>
+          <br>
+          <div class="d-flex align-items-center mb-3 p-2">
+            <img src="img/ubi.png" style="width: 20px; height: 25px;" class="me-3" />
+            <h6 class="m-0">Miguel Bracamontes No. 850 <br> Col. Valle de las Palmas, <br> C.P. 28130 Tecomán Colima
+            </h6>
+            <hr>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Contacto</h5>
+          <p>Email: info@example.com<br />Phone: 123-456-7890</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

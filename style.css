@@ -129,6 +129,7 @@ footer p {
   color: #fff;
   padding: 20px;
   margin-top: 50px;
+  
 }
 
 .c-img {
@@ -158,4 +159,18 @@ footer p {
 }
 #firstSubcontainer {
   padding-top: 200px;
+}
+/* history html style*/
+.hsection{
+  margin-top: 180px;
+  margin-bottom: 100px;
+}
+.vsection{
+  margin-top: 74px;
+  margin-bottom: 80px;
+}
+.paragraph-bg{
+  background-color: #e0d6b5;
+  border-radius: 25px;
+  padding: 20px;
 }
